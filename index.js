@@ -61,6 +61,22 @@ var flutils = {
 	 */
 	normalizeExt: function(ext){
 		return ext.split('.')[1];
+	},
+
+	/**
+	 * Checks if a file/folder exists, executing try/catch
+	 * 
+	 * @param  {String} dir  The directory folder/file to check
+	 * @return {Boolean}     Whether the folder/file exists
+	 */
+	dirExists: function(dir){
+		try{
+			fs.accessSync(dir, fs.F_OK)
+			return true;
+		}
+		catch(e){
+			return false;
+		}
 	}
 };
 

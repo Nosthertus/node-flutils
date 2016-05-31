@@ -43,6 +43,13 @@ Read the contents of a directory
 - [opts ***optional***] options for reading the directory
 - **returns** Array with the list of all files
 
+- - -
+
+**dirExists([*dir|String*])**
+Checks if the directory file/folder exists
+- [dir] directory to check if exists
+- **returns** Boolean
+
 **Opts - Object**
 - [type] The extension type of the file
 

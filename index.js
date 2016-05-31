@@ -71,7 +71,7 @@ var flutils = {
 	 */
 	dirExists: function(dir){
 		try{
-			fs.accessSync(dir, fs.F_OK)
+			fs.accessSync(dir, fs.F_OK);
 			return true;
 		}
 		catch(e){

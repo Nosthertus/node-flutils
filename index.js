@@ -49,7 +49,7 @@ var flutils = {
 		var directory = fs.readdirSync(path.normalize(dir));
 
 		return directory.filter(function(file){
-			return (opts.type && opts.type == flutils.normalizeExt(path.extname(file)));
+			return (options.type && options.type == flutils.normalizeExt(path.extname(file)));
 		});
 	},
 
